@@ -5,14 +5,14 @@ const K=1e3, M=1e6, B=1e9, T=1e12, P=1e15, E=1e18, Z=1e21, Y=1e24;
 export const CardTypes = [
     new CardType('jeffrey', 'Jeffrey The Epstein', 50, 1, 'src/img/Jeffrey.png'),
     new CardType('dorita', 'Dorita', 1000, 5, 'src/img/Dorita.png'),
-    new CardType('pollos', 'Los Inombrables', 25*K, 50, 'src/img/los-pollos.png'),
-    new CardType('Goku', 'Kekarottus', 1*M, 500, 'src/img/carta-que.png'),
-    new CardType('virgil', 'Virgilius, Soberano del Plastico', 50*M, 5*K, 'src/img/virgil-silla.png'),
-    new CardType('red', 'El Oyente', 2.5*B, 50*K, 'src/img/angry-red.png'),
+    new CardType('pollos', 'Los Inombrables', 25*K, 50, 'src/img/lospollos.png'),
+    new CardType('Goku', 'Kekarottus', 1*M, 500, 'src/img/cartaque.png'),
+    new CardType('virgil', 'Virgilius, Soberano del Plastico', 50*M, 5*K, 'src/img/virgilsilla.png'),
+    new CardType('red', 'El Oyente', 2.5*B, 50*K, 'src/img/angryred.png'),
     
     new CardType('pepsiman', 'El Heraldo de la Eferbescencia', 150*B, 1*M, 'src/img/pepsiman.png'),
     new CardType('gustavoS', 'Gustavus, El llamado ineludible', 10*T, 25*M, 'src/img/gustavoperro.png'),
-    new CardType('si', 'El Oráculo de la afirmación', 800*T, 1*B, 'src/img/perro-si.png'),
+    new CardType('si', 'El Oráculo de la afirmación', 800*T, 1*B, 'src/img/perrosi.png'),
     new CardType('freddy', 'El Curseado', 50*P, 50*B, 'src/img/fredi.png'),
     
     new CardType('juan', 'El Testigo', 5*E, 2*T, 'src/img/juan.png'),
