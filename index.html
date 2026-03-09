@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goy Clicker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/ico" href="./src/img/favicon.ico" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="hud-bar">
+        <div class="money-display">
+          <span>Dinero:</span>
+          <span id="money-value">0</span>
+        </div>
+        <div class="hud-controls">
+          <button id="settings-btn" class="btn" title="Ajustes">⚙️</button>
+        </div>
+      </header>
+      
+      <main id="game-board" class="board">
+      </main>
+
+      <aside id="shop-panel" class="shop">
+        <div id="shop-handle" class="shop-handle">
+          <span>&lt;</span> 
+        </div>
+        
+        <div class="shop-tabs">
+          <button id="tab-cards" class="shop-tab active">Cartas</button>
+          <button id="tab-upgrades" class="shop-tab">Mejoras</button>
+        </div>
+
+        <div id="shop-content-cards" class="shop-content active">
+            <div id="shop-items" class="shop-slider">
+            </div>
+        </div>
+
+        <div id="shop-content-upgrades" class="shop-content" style="display:none;">
+            <div id="upgrades-list" class="shop-slider">
+            </div>
+        </div>
+
+
+      </aside>
+    </div>
+
+    <div id="settings-modal" class="modal-overlay" style="display: none;">
+      <div class="modal-content">
+        <button id="close-settings-btn" class="close-btn">&times;</button>
+        <h2>Ajustes</h2>
+        
+        <div class="setting-group">
+          <label for="music-volume">Volumen de Música:</label>
+          <input type="range" id="music-volume" min="0" max="1" step="0.05" value="1">
+        </div>
+        
+        <div class="setting-group">
+          <button id="mute-music-btn" class="btn">Silenciar Música</button>
+        </div>
+
+        <div class="setting-group">
+          <button id="hard-reset-btn" class="btn warning">Reiniciar Juego Totalmente</button>
+        </div>
+
+        <div class="setting-group">
+          <button id="credits-btn" class="btn">Créditos</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="win-modal" class="modal-overlay" style="display: none;">
+      <div class="modal-content">
+        <h2>¡Has Ganado!</h2>
+        <p>Has conseguido la ultima carta.<br><br>¡Muchas gracias por jugar!</p>
+        <button id="close-win-btn" class="btn prestige">Reiniciar Juego</button>
+      </div>
+    </div>
+
+    <audio id="bg-music" loop autoplay>
+      <source src="./src/aud/Soundtrack.wav" type="audio/mpeg">
+    </audio>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
